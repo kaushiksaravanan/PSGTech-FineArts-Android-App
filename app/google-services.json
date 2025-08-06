@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "704669233302",
+    "project_id": "finearts-5d19b",
+    "storage_bucket": "finearts-5d19b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:704669233302:android:997cbd1f8a1cbd7dd752b7",
+        "android_client_info": {
+          "package_name": "com.psgtech.fineartsapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "704669233302-gc04jm1d6u971sgnga5fogqb5qi92brv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlNJibnuPYqxxgQDE_GQYbLe8lxvr_g9I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "704669233302-gc04jm1d6u971sgnga5fogqb5qi92brv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

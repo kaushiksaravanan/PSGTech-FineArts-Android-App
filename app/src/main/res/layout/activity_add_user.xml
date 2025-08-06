@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="50dp"
+    android:background="@color/white"
+    tools:context=".AddUserActivity">
+
+    <TextView
+        android:id="@+id/logoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bungee"
+        android:transitionName="logo_text"
+        android:layout_gravity="center_horizontal"
+        android:text="🧑‍💻Add User"
+        android:layout_marginTop="-20dp"
+        android:textSize="35sp"
+        android:textAlignment="center"
+        android:textColor="@color/black"/>
+
+    <!--    text input -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-25dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/name"
+            android:padding="5dp"
+            app:startIconTint="@color/black"
+
+            app:startIconDrawable="@drawable/user_24"
+            android:hint="Full name"
+            android:textColorHint="@color/black"
+            android:outlineAmbientShadowColor="@color/black"
+            style="@style/Widget.Material3.TextInputEditText.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:inputType="text"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/deptLayout"
+            android:hint="Department"
+            android:textColorHint="@color/black"
+            android:focusableInTouchMode="true"
+            app:startIconDrawable="@drawable/user_24"
+            android:padding="0dp"
+            app:startIconTint="@color/black"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            app:errorTextColor="@color/red"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+
+            <AutoCompleteTextView
+                android:id="@+id/deptDropDown"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/yearLayout"
+            android:textColorHint="@color/black"
+            android:hint="Year"
+            app:startIconTint="@color/black"
+            android:outlineAmbientShadowColor="@color/black"
+            android:focusableInTouchMode="true"
+
+            app:startIconDrawable="@drawable/user_24"
+            android:padding="0dp"
+
+            style="@style/Widget.Material3.TextInputEditText.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:inputType="text"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/black"
+            android:id="@+id/roleLayout"
+            android:hint="Role"
+            android:outlineAmbientShadowColor="@color/black"
+            android:focusableInTouchMode="true"
+            app:startIconDrawable="@drawable/user_24"
+            android:padding="0dp"
+            app:startIconTint="@color/black"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+
+            <AutoCompleteTextView
+                android:id="@+id/roleDropDown"
+                android:layout_width="match_parent"
+                android:layout_weight="0"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/black"
+            android:id="@+id/email"
+            app:startIconTint="@color/black"
+            android:transitionName="trans_email"
+            android:hint="Email"
+            android:outlineAmbientShadowColor="@color/black"
+            android:padding="5dp"
+            app:startIconDrawable="@drawable/envelope_24"
+            style="@style/Widget.Material3.TextInputEditText.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:inputType="textEmailAddress"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:textColorHint="@color/black"
+            android:layout_height="wrap_content"
+            android:id="@+id/phoneNo"
+            app:startIconTint="@color/black"
+            android:hint="Phone no"
+            android:outlineAmbientShadowColor="@color/black"
+            android:padding="5dp"
+            app:startIconDrawable="@drawable/phone_call_24"
+            style="@style/Widget.Material3.TextInputEditText.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:inputType="number"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/password"
+            android:hint="Password"
+            android:textColorHint="@color/black"
+            android:outlineAmbientShadowColor="@color/black"
+            app:passwordToggleEnabled="true"
+            app:startIconDrawable="@drawable/lock_24"
+            android:padding="5dp"
+            app:startIconTint="@color/black"
+            android:transitionName="trans_password"
+            style="@style/Widget.Material3.TextInputEditText.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:inputType="textPassword"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+<!--        Radio button for to give admin privilage when new user created-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/adminPrivText"
+                android:text="Admin Privilege"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"/>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/adminPrivRadGroup"
+                android:orientation="horizontal"
+                android:layout_alignParentRight="true">
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="No"
+
+                    android:textColor="@color/black"
+                    android:id="@+id/adminPrivRadNo"/>
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+
+                    android:textColor="@color/black"
+                    android:id="@+id/adminPrivRadYes"/>
+
+
+            </RadioGroup>
+
+        </RelativeLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/addButton"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@color/nude_dark"
+            android:layout_marginTop="20dp"
+            android:elevation="0dp"
+            android:text="Add"
+            android:transitionName="trans_login"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

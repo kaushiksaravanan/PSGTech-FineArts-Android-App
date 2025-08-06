@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:src="@drawable/user"
+        android:id="@+id/userPhoto"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        app:shapeAppearanceOverlay="@style/roundedImageView"/>
+
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Janath Jsk"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_below="@+id/userPhoto"
+        android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/userRollNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="21I433"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_below="@+id/userName"
+        android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/userDept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Information Technology"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_below="@+id/userRollNo"
+        android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/userYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Third Year"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_below="@+id/userDept"
+        android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Janath Jsk"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_below="@+id/userPhoto"
+        android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/userPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6379026730"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_below="@+id/userYear"
+        android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/userMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="21i433@psgtech.ac.in"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_below="@+id/userPhone"
+        android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/userRole"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="photo"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_below="@+id/userMail"
+        android:padding="10dp"/>
+
+
+    <TextView
+        android:id="@+id/userPriv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="admin"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_below="@+id/userRole"
+        android:padding="10dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="x"
+        android:textStyle="bold"
+        android:background="#00FFFFFF"/>
+
+</RelativeLayout>

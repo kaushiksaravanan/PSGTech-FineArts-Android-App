@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">FineArtsApp</string>
+    <string name="title_activity_login">Login</string>
+    <string name="app_creator">Fine Arts</string>
+
+
+    <!--    departments-->
+    <string-array name="departments">
+        <item>Automobile</item>
+        <item>Biomedical</item>
+        <item>Bio Technology</item>
+        <item>Civil</item>
+        <item>Computer Science</item>
+        <item>Cyber Security</item>
+        <item>Data Science</item>
+        <item>Electrical and Electronics</item>
+        <item>Electrical and Communication</item>
+        <item>Fashion Technology</item>
+        <item>Fashion Design</item>
+        <item>Information Technology</item>
+        <item>Instrumentation and Control</item>
+        <item>Mechanical</item>
+        <item>Metallurgy</item>
+        <item>Production</item>
+        <item>Robotics</item>
+        <item>Software Systems</item>
+        <item>Textile</item>
+        <item>Theoretical CS</item>
+        <item>EEE (sandwich)</item>
+        <item>Mechanical (sandwich)</item>
+        <item>Production (sandwich)</item>
+    </string-array>
+
+    <!--    role drop down adapter-->
+    <string-array name="roles">
+        <item>Art and Craft Head</item>
+        <item>Art and Craft Member</item>
+        <item>Design Head</item>
+        <item>Design Member</item>
+        <item>Join Secretary</item>
+        <item>Photography Head</item>
+        <item>Photography Member</item>
+        <item>Secretary</item>
+        <item>Sketching Head</item>
+        <item>Sketching Member</item>
+        <item>Social Media Head</item>
+        <item>Social Media Member</item>
+        <item>Staff</item>
+
+    </string-array>
+</resources>

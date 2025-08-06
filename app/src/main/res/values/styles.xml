@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="titleText" parent="android:TextAppearance">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Switch" parent="Widget.Material3.CompoundButton.MaterialSwitch">
+        <item name="colorPrimary">@color/green</item>
+        <item name="colorSurfaceVariant">@color/red</item>
+    </style>
+
+
+<!--    style for circular image -->
+    <style name="roundedImageView">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+</resources>

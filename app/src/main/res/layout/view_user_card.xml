@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/user"
+    android:minWidth="400dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="0dp"
+    android:layout_marginTop="10dp"
+    app:cardBackgroundColor="@color/white"
+    android:background="@color/white"
+    app:cardCornerRadius="30dp"
+    android:checkable="true"
+    android:focusable="true"
+    android:clickable="true"
+    app:cardPreventCornerOverlap="true"
+    android:layout_height="170dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/userPhoto"
+            android:padding="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="125dp"
+            app:shapeAppearanceOverlay="@style/roundedImageView"
+            android:layout_height="125dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/user"/>
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@id/userPhoto"
+            android:fontFamily="@font/bree_serif"
+            android:text="Name"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/roleNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userName"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="40dp"
+            android:layout_toRightOf="@id/userPhoto"
+            android:fontFamily="@font/noto_sans"
+            android:text="RoleNo"
+            android:textColor="@color/black"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/role"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/roleNo"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="70dp"
+            android:layout_toRightOf="@id/userPhoto"
+            android:fontFamily="@font/noto_sans"
+            android:text="Role"
+            android:textColor="@color/black"
+            android:textSize="17dp" />
+
+
+        <TextView
+            android:id="@+id/dept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/role"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="100dp"
+            android:layout_toRightOf="@id/userPhoto"
+            android:fontFamily="@font/noto_sans"
+            android:text="Dept"
+            android:textColor="@color/black"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dept"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="130dp"
+            android:layout_toRightOf="@id/userPhoto"
+            android:fontFamily="@font/noto_sans"
+            android:text="Year"
+            android:textColor="@color/black"
+            android:textSize="17dp" />
+
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>
